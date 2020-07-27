@@ -1,5 +1,6 @@
 <template>
     <div class="wrap">
+        <router-link  class="link" v-bind:to="{path: '/'}">Home</router-link>
         <form class="box" action="#">
             <h1>Login</h1>
             <input type="text" name="" placeholder="Username">
@@ -20,7 +21,6 @@ export default {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #34495e;
 }
 .box{
   width: 600px;

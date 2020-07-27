@@ -2,7 +2,13 @@
     <div>
         <section class="about-services">
             <div class="contenedor">
+                 <div>
+                    <router-link  class="link" v-bind:to="{path: `/${$route.params.lol}`}">About</router-link>
+                    <router-link  class="link" v-bind:to="{path: `/${$route.params.lol}/reviews`}"> | Reviews</router-link>
+                    <router-link  class="link" v-bind:to="{path: `/${$route.params.lol}/images`}"> | Images</router-link>
+                </div>
                 <router-view/>
+               
             </div>
         </section>
     </div>
@@ -15,12 +21,17 @@ export default {
 </script>
 
 <style scoped>
+
 .about-services{
     background: lightpink;
     padding: 30px;
 
 }
 
+.link-container{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
 
 .servicio-cont{
     display:flex;

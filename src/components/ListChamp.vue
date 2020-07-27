@@ -1,6 +1,7 @@
 <template>
     <div>
         <section class="about-services">
+            <router-link  class="link" v-bind:to="{path: '/'}">Home</router-link>
             <div class="contenedor">
                 <h2 class="titulo">Champs lol: {{$route.params.champ}}</h2>
                 <div class="servicio-cont">

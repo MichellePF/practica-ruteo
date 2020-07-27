@@ -1,5 +1,8 @@
 <template>
    <section class="clientes contenedor">
+        <div class="link-container">
+        <router-link  class="link" v-bind:to="{path: '/'}">Home</router-link>
+    </div>
         <h2 class="titulo">Que dicen nuestros clientes</h2>
         <div class="cards">
             <div class="card">
@@ -31,6 +34,11 @@ export default {
 .cards{
     display: flex;
     justify-content: space-evenly;
+}
+
+.link-container {
+    text-align: right;
+    padding: 30px 50px 0 0;
 }
 
 .cards .card{

@@ -23,7 +23,7 @@ export default new VueRouter({
             component: Login
         },
         {
-            path: '/:lol', 
+            path: '/:lol',
             component: Lol,
             children: [
                 {

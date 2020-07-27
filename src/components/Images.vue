@@ -1,5 +1,8 @@
 <template>
    <section class="portafolio">
+        <div class="link-container">
+        <router-link  class="link" v-bind:to="{path: '/'}">Home</router-link>
+    </div>
         <div class="contenedor">
             <h2 class="titulo">Champions</h2>
             <div class="galeria-port">
@@ -68,6 +71,10 @@ export default {
     background: #f2f2f2;
 }
 
+.link-container {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
 .galeria-port{
     display: flex;
     justify-content: space-evenly;
