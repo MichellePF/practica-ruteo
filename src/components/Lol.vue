@@ -2,24 +2,7 @@
     <div>
         <section class="about-services">
             <div class="contenedor">
-                <h2 class="titulo">Personajes: {{$route.params.name}}</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <img src="../assets/yuumi.jpg" alt="">
-                        <h3>Yuumi</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="../assets/lillia.png" alt="">
-                        <h3>Lillia</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="../assets/zoe.jpg" alt="">
-                        <h3>Zoe</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                </div>
+                <router-view/>
             </div>
         </section>
     </div>
