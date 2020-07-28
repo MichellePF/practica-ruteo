@@ -16,37 +16,49 @@ export default new VueRouter({
     routes: [
         {
             path: '/', 
-            component: Welcome
+            component: Welcome,
+            name: 'home',
+            props: true
         },
         {
             path: '/login', 
-            component: Login
+            component: Login,
+            name: 'login',
+            props: true
         },
         {
             path: '/:lol',
             component: Lol,
+            name: 'lol',
+            props: true,
             children: [
                 {
                     path: '',
-                    component: About
+                    component: About,
+                    name: 'about',
+                    props: true
                 },
                 {
                     path: 'reviews',
-                    component: Reviews
+                    component: Reviews,
+                    name: 'reviews'
                 },
                 {
                     path: 'images',
-                    component: Images
+                    component: Images,
+                    name: 'images'
                 }
             ]
         },
         {
             path: '/lol/:champ', 
-            component: ListChamp
+            component: ListChamp,
+            name: 'champ',
+            props: true
         },
         {
             path: '*', 
-            component: NotFound
+            component: NotFound,
         },
     ]
 })

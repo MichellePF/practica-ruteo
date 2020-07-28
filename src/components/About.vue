@@ -2,11 +2,11 @@
 
 <div class="header">
     <div class="link-container">
-        <router-link  class="link" v-bind:to="{path: '/'}">Home</router-link>
+        <router-link  class="link" v-bind:to="{name: 'home'}">Home</router-link>
     </div>
     
     <section class="textos-header">
-        <h1>About us: {{$route.params.lol}}</h1>
+        <h1>About us: {{lol}}</h1>
         <h3>League of Legends es un videojuego del género multijugador de arena de batalla en línea y deporte electrónico el cual fue desarrollado por Riot Games para Microsoft Windows y OS X. En un principio los servidores estaban alojados en la empresa GOA y fue vendida a la empresa china Tencent Holdings Limited. </h3>
     </section>
     <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -21,7 +21,10 @@
 
 <script>
 export default {
-    name: 'About'
+    name: 'About',
+    props: {
+        lol: String
+    }
 }
 </script>
 

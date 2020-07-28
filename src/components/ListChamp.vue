@@ -1,9 +1,9 @@
 <template>
     <div>
         <section class="about-services">
-            <router-link  class="link" v-bind:to="{path: '/'}">Home</router-link>
+            <router-link  class="link" v-bind:to="{name: 'home'}">Home</router-link>
             <div class="contenedor">
-                <h2 class="titulo">Champs lol: {{$route.params.champ}}</h2>
+                <h2 class="titulo">Champs lol: {{champ}}</h2>
                 <div class="servicio-cont">
                     <div class="servicio-ind">
                         <h3>Runas</h3>
@@ -28,7 +28,10 @@
 
 <script>
 export default {
-    name: 'ListChamp'
+    name: 'ListChamp',
+    props: {
+        champ: String
+    }
 }
 </script>
 

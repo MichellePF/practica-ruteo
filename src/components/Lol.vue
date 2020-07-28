@@ -3,9 +3,9 @@
         <section class="about-services">
             <div class="contenedor">
                  <div>
-                    <router-link  class="link" v-bind:to="{path: `/${$route.params.lol}`}">About</router-link>
-                    <router-link  class="link" v-bind:to="{path: `/${$route.params.lol}/reviews`}"> | Reviews</router-link>
-                    <router-link  class="link" v-bind:to="{path: `/${$route.params.lol}/images`}"> | Images</router-link>
+                    <router-link  class="link" v-bind:to="{name: 'about'}">About</router-link>
+                    <router-link  class="link" v-bind:to="{name: 'reviews'}"> | Reviews</router-link>
+                    <router-link  class="link" v-bind:to="{name: 'images'}"> | Images</router-link>
                 </div>
                 <router-view/>
                

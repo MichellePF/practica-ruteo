@@ -1,6 +1,6 @@
 <template>
     <div class="wrap">
-        <router-link  class="link" v-bind:to="{path: '/'}">Home</router-link>
+        <router-link  class="link" v-bind:to="{name: 'home'}">Home</router-link>
         <form class="box" action="#">
             <h1>Login</h1>
             <input type="text" name="" placeholder="Username">

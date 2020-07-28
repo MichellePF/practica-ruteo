@@ -1,7 +1,7 @@
 <template>
    <section class="portafolio">
         <div class="link-container">
-        <router-link  class="link" v-bind:to="{path: '/'}">Home</router-link>
+        <router-link  class="link" v-bind:to="{name: 'home'}">Home</router-link>
     </div>
         <div class="contenedor">
             <h2 class="titulo">Champions</h2>

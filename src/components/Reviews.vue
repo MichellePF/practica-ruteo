@@ -1,7 +1,7 @@
 <template>
    <section class="clientes contenedor">
         <div class="link-container">
-        <router-link  class="link" v-bind:to="{path: '/'}">Home</router-link>
+        <router-link  class="link" v-bind:to="{name: 'home'}">Home</router-link>
     </div>
         <h2 class="titulo">Que dicen nuestros clientes</h2>
         <div class="cards">
