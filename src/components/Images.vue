@@ -4,7 +4,7 @@
         <router-link  class="link" v-bind:to="{name: 'home'}">Home</router-link>
     </div>
         <div class="contenedor">
-            <h2 class="titulo">Champions</h2>
+            <h2 class="titulo">champion:{{lol}}</h2>
             <div class="galeria-port">
                  <div class="imagen-port">
                     <img src="../assets/lillia.png" alt="">
@@ -61,7 +61,10 @@
 
 <script>
 export default {
-    name: 'Images'
+    name: 'Images',
+    props: {
+        lol: String
+    }
 }
 </script>
 

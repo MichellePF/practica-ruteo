@@ -41,12 +41,14 @@ export default new VueRouter({
                 {
                     path: 'reviews',
                     component: Reviews,
-                    name: 'reviews'
+                    name: 'reviews',
+                    props: true
                 },
                 {
                     path: 'images',
                     component: Images,
-                    name: 'images'
+                    name: 'images',
+                    props: true
                 }
             ]
         },
